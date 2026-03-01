@@ -1,5 +1,7 @@
 name: Scheduled work
 on:
+  push:
+    branches: main
   schedule:
     - cron: '*/3 * * * *'
 
