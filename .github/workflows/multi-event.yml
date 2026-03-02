@@ -1,0 +1,15 @@
+name: Testing multi Event
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  multi-events:
+    runs-on: centos-latest
+    steps:
+      - name: Just running a shell command
+        run: echo "Heu buddy long time no see!"        
